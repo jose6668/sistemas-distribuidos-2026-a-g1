@@ -1,0 +1,36 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="980" rx="40" fill="#071018"/>
+  <rect x="32" y="32" width="1536" height="916" rx="28" fill="#0B1F28" stroke="#1C3B45"/>
+  <text x="84" y="112" fill="#EFF8F5" font-family="Arial, sans-serif" font-size="42" font-weight="700">Evidencia de ambientes</text>
+  <text x="84" y="154" fill="#A4C0B7" font-family="Arial, sans-serif" font-size="24">dev, qa y main en backend y frontend</text>
+
+  <rect x="84" y="208" width="692" height="640" rx="24" fill="#08151C" stroke="#234954"/>
+  <circle cx="132" cy="254" r="10" fill="#F26D6D"/>
+  <circle cx="164" cy="254" r="10" fill="#F2C66E"/>
+  <circle cx="196" cy="254" r="10" fill="#7AE7B3"/>
+  <text x="232" y="262" fill="#EFF8F5" font-family="Consolas, monospace" font-size="26">backend/.env.dev .env.qa .env.main</text>
+
+  <text x="116" y="328" fill="#7AE7B3" font-family="Consolas, monospace" font-size="24">GATEWAY_PORT=8080 / 9080 / 10080</text>
+  <text x="116" y="372" fill="#EFF8F5" font-family="Consolas, monospace" font-size="24">AUTH_PORT=8081 / 9081 / 10081</text>
+  <text x="116" y="416" fill="#EFF8F5" font-family="Consolas, monospace" font-size="24">INVENTORY_PORT=8082 / 9082 / 10082</text>
+  <text x="116" y="460" fill="#EFF8F5" font-family="Consolas, monospace" font-size="24">ALERT_PORT=8083 / 9083 / 10083</text>
+  <text x="116" y="504" fill="#EFF8F5" font-family="Consolas, monospace" font-size="24">POSTGRES_PORT=5433 / 6433 / 7433</text>
+  <text x="116" y="576" fill="#A4C0B7" font-family="Arial, sans-serif" font-size="22">Cada ambiente publica puertos distintos y evita mezclar</text>
+  <text x="116" y="606" fill="#A4C0B7" font-family="Arial, sans-serif" font-size="22">desarrollo, validacion y version lista para mostrar.</text>
+
+  <rect x="824" y="208" width="692" height="640" rx="24" fill="#08151C" stroke="#234954"/>
+  <circle cx="872" cy="254" r="10" fill="#F26D6D"/>
+  <circle cx="904" cy="254" r="10" fill="#F2C66E"/>
+  <circle cx="936" cy="254" r="10" fill="#7AE7B3"/>
+  <text x="972" y="262" fill="#EFF8F5" font-family="Consolas, monospace" font-size="26">frontend/.env.dev .env.qa .env.main</text>
+
+  <text x="856" y="328" fill="#7AE7B3" font-family="Consolas, monospace" font-size="24">VITE_DEV_SERVER_PORT=3000 / 4000 / 5000</text>
+  <text x="856" y="372" fill="#EFF8F5" font-family="Consolas, monospace" font-size="24">VITE_PROXY_TARGET=http://localhost:8080 / 9080 / 10080</text>
+  <text x="856" y="416" fill="#EFF8F5" font-family="Consolas, monospace" font-size="24">BACKEND_NETWORK=farmaexpres-dev_default</text>
+  <text x="856" y="460" fill="#EFF8F5" font-family="Consolas, monospace" font-size="24">BACKEND_NETWORK=farmaexpres-qa_default</text>
+  <text x="856" y="504" fill="#EFF8F5" font-family="Consolas, monospace" font-size="24">BACKEND_NETWORK=farmaexpres-main_default</text>
+  <text x="856" y="576" fill="#A4C0B7" font-family="Arial, sans-serif" font-size="22">El frontend cambia puerto, proxy y red para hablar</text>
+  <text x="856" y="606" fill="#A4C0B7" font-family="Arial, sans-serif" font-size="22">con el ambiente correcto sin salir del mismo flujo.</text>
+
+  <rect x="84" y="876" width="1432" height="2" fill="#1C3B45"/>
+</svg>

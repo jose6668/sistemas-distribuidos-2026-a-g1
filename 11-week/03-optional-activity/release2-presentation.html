@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmaExpres Release 2</title>
+  <meta name="description" content="Presentacion web de FarmaExpres Release 2 con enfoque comercial, evidencias en video, ambientes y Liquibase.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./release2-presentation.css?v=2">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true">
+    <span id="scroll-indicator"></span>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark"></span>
+      <span>FarmaExpres</span>
+    </a>
+
+    <nav class="topnav" aria-label="Secciones">
+      <a href="#problematica">Problematica</a>
+      <a href="#etapa-1">Etapa 1</a>
+      <a href="#etapa-2">Etapa 2</a>
+      <a href="#etapa-3">Etapa 3</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero reveal" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Release 2</p>
+        <h1>Menos improvisacion. Mas control farmacéutico.</h1>
+        <p class="hero-lead">
+          FarmaExpres sirve para administrar productos, usuarios, inventario, movimientos y alertas
+          desde una sola plataforma clara y entendible.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#etapa-1">Ver recorrido</a>
+          <a class="button button-secondary" href="#etapa-2">Ver confianza operativa</a>
+        </div>
+      </div>
+
+      <div class="hero-proof">
+        <p>Administrador, farmaceutico y auditor en un mismo flujo.</p>
+        <p>Ambientes separados para desarrollar, validar y liberar.</p>
+        <p>Base de datos versionada para crecer sin perder control.</p>
+      </div>
+    </section>
+
+    <section class="section problem reveal" id="problematica">
+      <div class="section-head">
+        <p class="eyebrow">Problematica</p>
+        <h2>Una farmacia pequeña necesita control, no mas hojas sueltas.</h2>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-copy">
+          <p>
+            El problema no es solo registrar medicamentos. El problema es decidir bien cuando el
+            inventario no es claro, los movimientos no tienen trazabilidad y las alertas llegan tarde.
+          </p>
+        </div>
+
+        <ul class="problem-list">
+          <li>Inventario incierto y actualizaciones manuales.</li>
+          <li>Riesgo de dispensar productos vencidos o perderlos por caducidad.</li>
+          <li>Poca visibilidad sobre entradas, salidas y responsables.</li>
+          <li>Reportes tardios para decisiones que deberian ser inmediatas.</li>
+        </ul>
+      </div>
+
+      <div class="problem-strip">
+        <div>
+          <span>01</span>
+          <p>Control diario</p>
+        </div>
+        <div>
+          <span>02</span>
+          <p>Seguridad por rol</p>
+        </div>
+        <div>
+          <span>03</span>
+          <p>Trazabilidad real</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stage reveal" id="etapa-1">
+      <div class="section-head">
+        <p class="eyebrow">Etapa 1</p>
+        <h2>Funcionamiento del producto.</h2>
+      </div>
+
+      <div class="stage-intro">
+        <p>Muestra como la plataforma ordena la operacion y hace que cada rol entienda exactamente que puede hacer.</p>
+        <div class="stage-tags" aria-label="Valor del producto">
+          <span>Productos</span>
+          <span>Usuarios</span>
+          <span>Inventario</span>
+          <span>Movimientos</span>
+          <span>Reportes</span>
+          <span>Alertas</span>
+        </div>
+      </div>
+
+      <div class="demo-shell">
+        <div class="role-switcher" id="role-switcher" aria-label="Roles"></div>
+
+        <div class="demo-main">
+          <div class="demo-video-wrap">
+            <video id="spotlight-video" class="spotlight-video" controls playsinline preload="metadata"></video>
+            <div class="video-empty" id="video-empty" hidden>
+              <p>Falta adjuntar este clip.</p>
+              <span>La estructura ya esta lista para incorporarlo.</span>
+            </div>
+          </div>
+
+          <div class="demo-meta">
+            <p class="demo-kicker" id="spotlight-kicker">Rol</p>
+            <h3 id="spotlight-title">Titulo</h3>
+            <p id="spotlight-copy">Descripcion breve del flujo.</p>
+            <p class="demo-value" id="spotlight-value">Valor para el negocio.</p>
+          </div>
+        </div>
+
+        <div class="demo-steps" id="demo-steps" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section stage reveal" id="etapa-2">
+      <div class="section-head">
+        <p class="eyebrow">Etapa 2</p>
+        <h2>Diversificar ambientes para avanzar con orden.</h2>
+      </div>
+
+      <div class="pipeline">
+        <div class="pipeline-node">
+          <strong>DEV</strong>
+          <p>Se construye y se prueba rapido.</p>
+          <span>Backend 8080 / Frontend 3000</span>
+        </div>
+        <div class="pipeline-connector"></div>
+        <div class="pipeline-node">
+          <strong>QA</strong>
+          <p>Se valida antes de prometer una entrega.</p>
+          <span>Backend 9080 / Frontend 4000</span>
+        </div>
+        <div class="pipeline-connector"></div>
+        <div class="pipeline-node">
+          <strong>MAIN</strong>
+          <p>Queda la version estable para mostrar y sostener.</p>
+          <span>Backend 10080 / Frontend 5000</span>
+        </div>
+      </div>
+
+      <div class="service-band">
+        <p>Auth 8081 / 9081 / 10081</p>
+        <p>Inventory 8082 / 9082 / 10082</p>
+        <p>Alert 8083 / 9083 / 10083</p>
+        <p>Postgres 5433 / 6433 / 7433</p>
+      </div>
+
+      <div class="evidence-gallery">
+        <figure class="evidence-shot">
+          <img src="./assets/evidence-ambientes.svg" alt="Pantallazo de evidencias de ambientes dev, qa y main en backend y frontend.">
+          <figcaption>Evidencia de ambientes dev, qa y main en frontend y backend.</figcaption>
+        </figure>
+        <figure class="evidence-shot">
+          <img src="./assets/evidence-release.svg" alt="Pantallazo de trazabilidad de ramas y promotion a Release 2.">
+          <figcaption>Evidencia de ramas, QA y consolidacion hacia Release 2.</figcaption>
+        </figure>
+      </div>
+
+      <div class="trace-layout">
+        <div class="trace-copy">
+          <p class="trace-title">La idea no es hablar de puertos. La idea es mostrar orden.</p>
+          <p>
+            FarmaExpres separa desarrollo, validacion y liberacion para que un cambio nuevo no dañe lo
+            que ya esta listo para mostrar.
+          </p>
+        </div>
+
+        <div class="branch-flow" aria-label="Flujo de ramas">
+          <div>
+            <span>Historia</span>
+            <p>HU-FE01-dev</p>
+          </div>
+          <div>
+            <span>Validacion</span>
+            <p>HU-FE01-qa</p>
+          </div>
+          <div>
+            <span>Integracion</span>
+            <p>QA</p>
+          </div>
+          <div>
+            <span>Entrega</span>
+            <p>Release.2</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="evidence-line">
+        <p>Frontend: PR #41 fusiona <strong>QA</strong> en <strong>Release.2</strong>.</p>
+        <p>Backend: PR #70 consolida ambientes y versionado de base de datos en <strong>Release.2</strong>.</p>
+      </div>
+    </section>
+
+    <section class="section stage reveal" id="etapa-3">
+      <div class="section-head">
+        <p class="eyebrow">Etapa 3</p>
+        <h2>Liquibase explicado en lenguaje de negocio.</h2>
+      </div>
+
+      <div class="liquibase-lead">
+        <p>
+          Liquibase es la bitacora oficial de la base de datos. Hace que cada cambio quede registrado,
+          se aplique en orden y no dependa de pasos manuales olvidados.
+        </p>
+      </div>
+
+      <div class="evidence-gallery">
+        <figure class="evidence-shot">
+          <img src="./assets/evidence-liquibase-structure.svg" alt="Pantallazo de la estructura versionada de Liquibase para auth e inventory.">
+          <figcaption>Evidencia de la estructura versionada en auth e inventory.</figcaption>
+        </figure>
+        <figure class="evidence-shot">
+          <img src="./assets/evidence-liquibase-flow.svg" alt="Pantallazo del flujo de docker compose con liquibase y validacion del esquema.">
+          <figcaption>Evidencia de ejecucion previa al arranque y validacion del esquema.</figcaption>
+        </figure>
+      </div>
+
+      <div class="pillars">
+        <article>
+          <span>01</span>
+          <h3>Versiona</h3>
+          <p>Cada cambio queda documentado, no disperso en scripts sueltos.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Prepara</h3>
+          <p>La base arranca lista antes de que los servicios entren en operacion.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Valida</h3>
+          <p>Los microservicios verifican el esquema en vez de modificarlo sin control.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Recupera</h3>
+          <p>Tambien deja camino de reversa para cambios que necesiten correccion.</p>
+        </article>
+      </div>
+
+      <div class="liquibase-detail">
+        <p>Autenticacion e inventario evolucionan por separado, pero con la misma disciplina.</p>
+        <p>El mensaje es simple: los datos del negocio tambien estan protegidos.</p>
+      </div>
+    </section>
+
+    <section class="section closing reveal">
+      <div class="closing-copy">
+        <p class="eyebrow">Cierre</p>
+        <h2>Release 2 ya no se cuenta como proyecto. Se cuenta como producto.</h2>
+        <p>
+          FarmaExpres demuestra operacion clara, crecimiento ordenado y datos confiables.
+          Eso es lo que hace que la entrega sea entendible y solida.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./release2-presentation.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="980" rx="40" fill="#071018"/>
+  <rect x="32" y="32" width="1536" height="916" rx="28" fill="#0B1F28" stroke="#1C3B45"/>
+  <text x="84" y="112" fill="#EFF8F5" font-family="Arial, sans-serif" font-size="42" font-weight="700">Evidencia de ejecucion y control</text>
+  <text x="84" y="154" fill="#A4C0B7" font-family="Arial, sans-serif" font-size="24">Liquibase corre antes de los servicios y el esquema se valida</text>
+
+  <rect x="84" y="210" width="1432" height="680" rx="24" fill="#08151C" stroke="#234954"/>
+  <circle cx="132" cy="256" r="10" fill="#F26D6D"/>
+  <circle cx="164" cy="256" r="10" fill="#F2C66E"/>
+  <circle cx="196" cy="256" r="10" fill="#7AE7B3"/>
+  <text x="232" y="264" fill="#EFF8F5" font-family="Consolas, monospace" font-size="26">docker-compose + validacion de esquema</text>
+
+  <text x="118" y="340" fill="#7AE7B3" font-family="Consolas, monospace" font-size="24">postgres</text>
+  <text x="118" y="386" fill="#EFF8F5" font-family="Consolas, monospace" font-size="24">liquibase-auth  -> changeLogFile=changelog-master.yaml -> update</text>
+  <text x="118" y="432" fill="#EFF8F5" font-family="Consolas, monospace" font-size="24">liquibase-inventory -> changeLogFile=changelog-master.yaml -> update</text>
+  <text x="118" y="498" fill="#F2C66E" font-family="Consolas, monospace" font-size="24">auth-service depends_on liquibase-auth service_completed_successfully</text>
+  <text x="118" y="544" fill="#F2C66E" font-family="Consolas, monospace" font-size="24">inventory-service depends_on liquibase-inventory service_completed_successfully</text>
+  <text x="118" y="610" fill="#7AE7B3" font-family="Consolas, monospace" font-size="24">ddl-auto: validate</text>
+  <text x="118" y="656" fill="#EFF8F5" font-family="Consolas, monospace" font-size="24">los servicios verifican el esquema, pero no lo cambian solos</text>
+
+  <rect x="992" y="320" width="460" height="280" rx="22" fill="#102B2E" stroke="#2C6657"/>
+  <text x="1032" y="390" fill="#EFF8F5" font-family="Arial, sans-serif" font-size="30" font-weight="700">Mensaje de negocio</text>
+  <text x="1032" y="458" fill="#A4C0B7" font-family="Arial, sans-serif" font-size="26">La base arranca lista,</text>
+  <text x="1032" y="494" fill="#A4C0B7" font-family="Arial, sans-serif" font-size="26">los cambios quedan trazados</text>
+  <text x="1032" y="530" fill="#A4C0B7" font-family="Arial, sans-serif" font-size="26">y el producto no depende</text>
+  <text x="1032" y="566" fill="#A4C0B7" font-family="Arial, sans-serif" font-size="26">de pasos manuales olvidados.</text>
+</svg>

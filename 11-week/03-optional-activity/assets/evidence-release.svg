@@ -1,0 +1,40 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="980" rx="40" fill="#071018"/>
+  <rect x="32" y="32" width="1536" height="916" rx="28" fill="#0B1F28" stroke="#1C3B45"/>
+  <text x="84" y="112" fill="#EFF8F5" font-family="Arial, sans-serif" font-size="42" font-weight="700">Evidencia de trazabilidad</text>
+  <text x="84" y="154" fill="#A4C0B7" font-family="Arial, sans-serif" font-size="24">ramas por historia, QA y consolidacion a Release 2</text>
+
+  <text x="84" y="252" fill="#7AE7B3" font-family="Arial, sans-serif" font-size="24" font-weight="700">Frontend</text>
+  <rect x="84" y="288" width="260" height="76" rx="18" fill="#08151C" stroke="#234954"/>
+  <text x="118" y="334" fill="#EFF8F5" font-family="Consolas, monospace" font-size="28">HU-FE01-dev</text>
+  <rect x="388" y="288" width="260" height="76" rx="18" fill="#08151C" stroke="#234954"/>
+  <text x="422" y="334" fill="#EFF8F5" font-family="Consolas, monospace" font-size="28">HU-FE01-qa</text>
+  <rect x="692" y="288" width="180" height="76" rx="18" fill="#08151C" stroke="#234954"/>
+  <text x="754" y="334" fill="#EFF8F5" font-family="Consolas, monospace" font-size="28">QA</text>
+  <rect x="916" y="288" width="260" height="76" rx="18" fill="#102B2E" stroke="#2C6657"/>
+  <text x="952" y="334" fill="#EFF8F5" font-family="Consolas, monospace" font-size="28">Release.2</text>
+  <path d="M344 326H388" stroke="#7AE7B3" stroke-width="4"/>
+  <path d="M648 326H692" stroke="#7AE7B3" stroke-width="4"/>
+  <path d="M872 326H916" stroke="#7AE7B3" stroke-width="4"/>
+
+  <text x="84" y="466" fill="#7AE7B3" font-family="Arial, sans-serif" font-size="24" font-weight="700">Backend</text>
+  <rect x="84" y="502" width="240" height="76" rx="18" fill="#08151C" stroke="#234954"/>
+  <text x="118" y="548" fill="#EFF8F5" font-family="Consolas, monospace" font-size="28">HU-007-dev</text>
+  <rect x="368" y="502" width="240" height="76" rx="18" fill="#08151C" stroke="#234954"/>
+  <text x="402" y="548" fill="#EFF8F5" font-family="Consolas, monospace" font-size="28">HU-007-qa</text>
+  <rect x="652" y="502" width="180" height="76" rx="18" fill="#08151C" stroke="#234954"/>
+  <text x="714" y="548" fill="#EFF8F5" font-family="Consolas, monospace" font-size="28">QA</text>
+  <rect x="876" y="502" width="300" height="76" rx="18" fill="#102B2E" stroke="#2C6657"/>
+  <text x="912" y="548" fill="#EFF8F5" font-family="Consolas, monospace" font-size="28">Release.2</text>
+  <path d="M324 540H368" stroke="#7AE7B3" stroke-width="4"/>
+  <path d="M608 540H652" stroke="#7AE7B3" stroke-width="4"/>
+  <path d="M832 540H876" stroke="#7AE7B3" stroke-width="4"/>
+
+  <rect x="84" y="680" width="640" height="140" rx="24" fill="#08151C" stroke="#234954"/>
+  <text x="118" y="732" fill="#F2C66E" font-family="Consolas, monospace" font-size="30">PR #41</text>
+  <text x="118" y="776" fill="#EFF8F5" font-family="Arial, sans-serif" font-size="28">QA fusionado en Release.2 para el frontend</text>
+
+  <rect x="784" y="680" width="732" height="140" rx="24" fill="#08151C" stroke="#234954"/>
+  <text x="818" y="732" fill="#F2C66E" font-family="Consolas, monospace" font-size="30">PR #70</text>
+  <text x="818" y="776" fill="#EFF8F5" font-family="Arial, sans-serif" font-size="28">Consolidacion de ambientes y versionado de base en backend</text>
+</svg>
